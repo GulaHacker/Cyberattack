@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <title>Personal Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    font-family: 'Staatliches', cursive;
+}
+section.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(82, 44, 0, 0.699),rgba(4,9,30,0.7)),url(images/neon6.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    scroll-behavior: smooth;
+}
+nav{display:flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(4,9,30,0.4);
+}
+nav a{text-decoration: none;
+    font-size:200%;
+    color:white;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position:relative;
+
+}
+.nav-links ul li a{color:black;
+                background-color:rgb(226, 91, 12);
+                text-decoration: none;
+                font-size:15px;
+                padding:6px;
+                padding-left:15px;
+                padding-right:15px;
+                border-style:solid;
+                border-color:grey;
+                border-width: thin;
+                position:relative;
+                box-shadow: inset 0 0 0 0 #f9e506;
+                transition: ease-out 0.3s;
+                outline:none;
+}
+.nav-links ul li a:hover{box-shadow: inset 300px 0 0 0 #f9e506;
+                        cursor:crosshair;
+                        color:white;}
+p.title{
+        text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+        margin-top: 5%;
+        margin-left: 40%;
+        margin-right: 40%;
+        font-size:50px;
+        font-family: 'Dancing Script';
+        text-align:center;
+        color: yellow;     
+}
+div.form{ background-color: rgba(4,9,30,0.5);
+        margin-left:35%;
+        margin-right:35%;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right: 10px;
+        padding-left:10px;
+        color:palevioletred;
+        border-radius:20px;
+        border-color: yellow;
+        border-style:solid;
+        border-width: thin;
+        box-shadow: inset 0 0 0 0;
+        transition: 0.8s;
+}
+
+div.form:hover{box-shadow: inset 0 0 15px 0;}
+
+
+p.n{margin-top:10px;
+    margin-left:40%;
+    margin-right:40%;
+    font-size:17px;
+    color:rgb(255, 0, 191);
+    border-color:yellow;
+    background-color: rgba(46, 46, 39, 0.4);
+    border-style:solid;
+    border-width:thin;
+    box-shadow: inset 0 0 0 0;
+
+    }
+
+p.n:hover{box-shadow: inset 0 0 30px 0;}
+
+div.cbox{text-align: left;
+        margin-left:40%;
+        margin-right:40%;
+        }
+                </style>
+
+<script language = "JavaScript">
+function check() {
+
+var valid=true;
+if (document.form1. myName.value=='')
+{
+alert('Please fill in your name');
+document.form1. myName.focus();
+valid=false;
+}
+if ( (document.form1.myGender[0].checked==false) 
+    && (document.form1.myGender[1].checked==false)) 
+{
+alert("Please select your Gender.");
+valid=false;
+}
+
+if ( (document.form1.age[0].selected==false) 
+    && (document.form1.age[1].selected==false) 
+    && (document.form1.age[2].selected==false)
+    && (document.form1.age[3].selected==false)
+    && (document.form1.age[4].selected==false)
+    && (document.form1.age[5].selected==false)
+    && (document.form1.age[6].selected==false)
+    && (document.form1.age[7].selected==false))
+    {
+            alert ('Please choose your age');
+                       valid=false;
+}
+if ( (document.form1.game[0].checked==false) 
+    && (document.form1.game[1].checked==false) 
+    && (document.form1.game[2].checked==false)
+    && (document.form1.game[3].checked==false)
+    && (document.form1.game[4].checked==false))
+    {
+            alert ('Choose at least one games.');
+                       valid=false;
+    }
+    return valid;
+}
+
+            </script>
+</head>
+
+<body>
+    <section class="header">
+     <nav>
+        <a href="index.html"><p class="logo">WELCOME</p></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="social_media.html">SOCIAL MEDIA</a></li>
+                    <li><a href="ContextMe.html">Registration Form</a></li>
+                    <li><a href="Education.html">EDUCATION</a></li>
+                </ul>
+            </div>
+    </nav>
+            
+            <p class="title"> Registration Form</p>
+
+            <div class="form">
+                <center><form id="f" name="form1" method="post" action=" " onSubmit=" return check()" >
+                    <p class="n" >UserName:</p><br>
+                        <input type="text" name="myName"><br>
+                    <p class="n" >Gender:</p><br>
+                        <input type="radio" name="myGender" value="Male">Male 
+                        <input type="radio" name="myGender" value="Female">Female <br>
+                    <p class="n" >Age:</p><br>
+                    <select name="age">
+                        <option value="18">18 years old
+                        <option value="19">19 years old
+                        <option value="20">20 years old
+                        <option value="21">21 years old
+                        <option value="22">22 years old
+                        <option value="23">23 years old
+                        <option value="24">24 years old
+                        <option value="25">25 years old
+                    </select><br>
+                     
+                    <p class="n" >Favourite Games:</p><br>
+                     <div class="cbox">
+                        <input type="checkbox" name="game">Grand Theft Auto V<br>
+                        <input type="checkbox" name="game">Cyberpunk 2077<br>
+                        <input type="checkbox" name="game">Call Of Duty Modern Warfare<br>
+                        <input type="checkbox" name="game">The Sims 4<br>
+                        <input type="checkbox" name="game">Genshin Impact<br>
+                    </div>
+
+                   <p class="n"> Feedback For This WebSite:</p><br>
+                    <textarea name="feedback" rows="5" cols="40"></textarea><br>
+
+                    <p class="button"><input type="submit" name="submit" value="Submit" >
+                        <input  type="reset" name="reset" value="Reset"></p>
+                </form>
+            </center>
+            </div>
+    </section>
+</body>
+</html>

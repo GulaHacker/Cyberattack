@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Staatliches', cursive;
+}
+section.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(219, 104, 167, 0.589),rgba(4,9,30,0.7)),url(images/neon.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    scroll-behavior: smooth;
+}
+nav{display:flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(4,9,30,0.4);
+}
+nav a{text-decoration: none;
+    font-size:200%;
+    color:white;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position:relative;
+
+}
+.nav-links ul li a{color:black;
+                text-decoration: none;
+                font-size:15px;
+                padding:6px;
+                padding-left:15px;
+                padding-right:15px;
+                border-style:solid;
+                border-color:grey;
+                border-width: thin;
+                position:relative;
+                box-shadow: inset 0 0 0 0 #f9e506;
+                transition: ease-out 0.3s;
+                outline:none;
+}
+.nav-links ul li a:hover{box-shadow: inset 300px 0 0 0 #f9e506;
+                        cursor:crosshair;
+                        color:white;}
+
+p.text{font-size:70px;
+        color:white;
+        text-align: center;
+        margin-top:250px;}
+p.subtext{font-size:20px;
+         color:black;
+        text-align:center;
+        margin-bottom:15px;
+        }
+p.name{font-size: 20px;
+      color:black;
+      background-color:  rgb(255,0,68);
+      text-align: center;
+     border-style: solid;
+     border-width: thin;
+     margin-left: 46%;
+     margin-right: 46%;
+     border-color:black;
+     transition: ease-out 0.3s;
+     outline:none;
+    position:relative;
+    z-index: 1;
+
+}
+p.name:hover{color: rgb(255,0,68);
+            cursor:crosshair;}
+
+p.name:before{transition: 0.5s all ease;
+                position: absolute;
+                top:0;
+                left:50%;
+                right:50%;
+                bottom:0;
+                opacity:0;
+                content: "";
+                background-color: white;
+}
+p.name:hover:before{transition: 0.5s all ease;
+                    left:0;
+                    right:0;
+                    opacity: 1;
+                    z-index: -1;
+}
+
+.content a{ text-decoration: none;}
+
+/*Next Section*/
+
+#Next{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(189, 153, 53, 0.589),rgba(4,9,30,0.7)),url(images/neon2.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+div.cover{background-color: rgba(0,9,30,0.4);
+        height:100%;
+        width:25%;
+        border-color: rgb(0, 34, 168);
+        border-style: solid;
+        border-width: thin;
+        padding-left:10px;
+        padding-top:10px;
+        margin-left:10%;
+        transition:0.5s;
+        box-shadow: inset 0 0 0 0 rgb(0, 132, 255);
+}
+
+
+div.cover:hover{ 
+                box-shadow: inset 0 0 30px 0 rgb(0, 132, 255);
+             }
+
+.player{position:relative;
+width: 350px;
+background:white;
+box-shadow: 0 50px 80px rgba(0,0,0,0.25);
+}
+.player .song{position:relative;
+            width:100%;
+            height:350px;
+
+        }
+.player .song img{position:absolute;
+                top: 0;
+                left: 0;
+                width:100;
+                height:100%;
+                object-fit:cover;
+}
+
+p.my{text-align: right;
+    color:blueviolet;
+    font-size:25px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+
+}
+
+p.middle{ font-size:20px;
+        text-align:center;
+        color:white;
+        text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-style: solid;
+        border-width:thin;
+        border-color:blueviolet;
+        box-shadow: inset 0 0 15px 0 blueviolet;
+        margin-left:40%;
+        margin-right:40%;
+        padding: 7px;
+
+}
+
+div.Games{background-color: rgba(0,9,30,0.4);
+    height:100%;
+    width:25%;
+    border-color: rgb(255, 0, 0);
+    border-style: solid;
+    border-width: thin;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:50px;
+    margin-left:65%;
+    transition:0.5s;
+    box-shadow: inset 0 0 0 0 rgb(255, 0, 0);
+ 
+
+}
+
+div.Games:hover{ 
+    box-shadow: inset 0 0 30px 0 rgb(255, 0, 0);
+ }
+
+
+p.mf{text-align: left;
+    
+    color:rgb(255, 94, 0);
+    font-size:25px;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+}
+
+img.i{width:250px;
+    height:250px;}
+
+p.textis{float:right;
+        padding-right:20px;
+        color:rgb(255, 0, 0);
+        font-size:17px;
+    }
+p.cr{font-family:"Pacifico";
+    font-size:10px;
+    color:yellow;
+    text-align:center;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+    padding-top:5%;
+   
+}
+p.cr:hover{text-decoration: underline;
+}

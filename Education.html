@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <title>Personal Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    font-family: 'Staatliches', cursive;
+}
+section.header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(0, 16, 105, 0.4),rgba(4,9,30,0.7)),url(images/neon7.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    scroll-behavior: smooth;
+}
+nav{display:flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(4,9,30,0.4);
+}
+nav a{text-decoration: none;
+    font-size:200%;
+    color:white;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position:relative;
+
+}
+.nav-links ul li a{color:rgb(233, 233, 86);
+                text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+                background-color:rgb(8, 13, 41);
+                text-decoration: none;
+                font-size:15px;
+                padding:6px;
+                padding-left:15px;
+                padding-right:15px;
+                border-style:solid;
+                border-color:rgb(233, 233, 86);
+                border-width: thin;
+                position:relative;
+                box-shadow: inset 0 0 0 0 #f9e506;
+                transition: ease-out 0.3s;
+                outline:none;
+}
+.nav-links ul li a:hover{box-shadow: inset 300px 0 0 0 #f9e506;
+                        cursor:crosshair;
+                        color:white;
+                    }
+p.tajuk{font-family:'Staatliches';
+        font-size:50px;
+        margin-top:20px;
+        color: #b0f906;
+        text-align:center;
+        text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+      }
+p.subtajuk{font-family:'Dancing Script';
+        font-size:35px;
+        color: #06e9f9;
+        text-align:left;
+        text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+        margin-left:20px;
+      }
+div.belajar{
+    margin-left:25%;
+    margin-right:25%;
+    margin-top:5%;
+}
+div.isi{ background-color:rgba(4,9,30,0.4);
+             border-radius: 30px;
+             border-style: solid;
+             border-width:thin;
+             border-color:#06e9f9 ;
+             box-shadow: 0 0 15px 0 #06e9f9;
+
+}
+
+p.hi{color:#06e9f9;
+    font-size:15px;
+    padding:20px;
+}
+
+p.subtajukz{font-family:'Dancing Script';
+        font-size:35px;
+        color: #ff8762;
+        text-align:left;
+        text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+        margin-left:20px;
+        margin-top:20px;
+      }
+div.isiz{ background-color:rgba(4,9,30,0.4);
+             border-radius: 30px;
+             border-style: solid;
+             border-width:thin;
+             border-color:#ff8762 ;
+             box-shadow: 0 0 15px 0 #ff8762;
+}
+ul{color:#ff8762;
+    font-size:15px;
+    padding:22px;
+}
+
+            </style>
+        
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><p class="logo">WELCOME</p></a>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT ME</a></li>
+                            <li><a href="social_media.html">SOCIAL MEDIA</a></li>
+                            <li><a href="ContextMe.html">Registration Form</a></li>
+                            <li><a href="Education.html">EDUCATION</a></li>
+                        </ul>
+                    </div>
+            </nav>
+            <p class="tajuk">EDUCATION</p>
+            <div class="belajar">
+                <p class="subtajuk">STUDY OF.</p>
+                <div class="isi">
+                    <p class="hi">PRIMARY SCHOOL:<br>
+                    sekolah kebangsaan bandar tun hussein onn 1<br>
+                    SECONDARY SCHOOL:<br>
+                    sekolah menengah kebangsaan bandar tun hussein onn 2<br>
+                    UNIVERSITY:<br>
+                    universiti teknologi mara (UiTM), cawangan perlis</p>
+                </div>
+                <p class="subtajukz">PROGRAMMING.</p>
+                <div class="isiz">
+                    <p class="content">
+                    <ul type="disc">
+                        <li>object-oriented programming</li>
+                        <li>programming paradigms</li>
+                        <li>fundamentals of data structures</li>
+                        <li>fundamentals of algorithms and computer problem solving</li>
+                        <li>introduction of database management system</li>
+                    </ul>
+                </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

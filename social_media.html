@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <title>Personal Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    font-family: 'Staatliches', cursive;
+}
+section.background{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(124, 0, 0, 0.4),rgba(4,9,30,0.7)),url(images/neon5.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: 'Staatliches';
+}
+nav{display:flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(4,9,30,0.4);
+}
+nav a{text-decoration: none;
+    font-size:200%;
+    height: 50px;
+    width: 50px;
+}
+
+p.logo{color:rgb(255, 0, 191);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    position:relative;
+
+}
+.nav-links ul li a{color:black;
+                background:rgb(255, 0, 191);
+                text-decoration: none;
+                font-size:15px;
+                padding:6px;
+                padding-left:15px;
+                padding-right:15px;
+                border-style:solid;
+                border-color:grey;
+                border-width: thin;
+                position:relative;
+                box-shadow: inset 0 0 0 0 #f9e506;
+                transition: ease-out 0.3s;
+                outline:none;
+}
+.nav-links ul li a:hover{box-shadow: inset 300px 0 0 0 #f9e506;
+                        cursor:crosshair;
+                        color:white;}
+
+p.text{color:white;
+      text-align:center;
+      font-size:40px;
+      margin-top:10%;
+      text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+    }
+div.social{margin:5px;
+            text-align: center;
+            background-color:rgba(30, 4, 21, 0.5);
+            padding-top:10px;
+            padding-bottom: 10px;
+            margin-left:20%;
+            margin-right:20%;
+}
+.fa-facebook{color:rgb(255, 0, 191);
+            border-style: solid;
+            border-color:yellow;
+            border-width: thin;
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-left:10px;
+            margin-right:10px;
+            cursor:crosshair;
+
+
+}
+.fa-facebook:hover{background-color:yellow;
+}
+
+.fa-instagram{color:rgb(255, 0, 191);
+            border-style: solid;
+            border-color:yellow;
+            border-width: thin;
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left:10px;
+            margin-right:10px;
+            cursor:crosshair;
+
+}
+.fa-instagram:hover{background-color:yellow;
+}
+
+.fa-twitter{color:rgb(255, 0, 191);
+            border-style: solid;
+            border-color:yellow;
+            border-width: thin;
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-left:10px;
+            margin-right:10px;
+            cursor:crosshair;
+}
+.fa-twitter:hover{background-color:yellow;
+}
+
+.fa-youtube{color:rgb(255, 0, 191);
+            border-style: solid;
+            border-color:yellow;
+            border-width: thin;
+            padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left:10px;
+            margin-right:10px;
+            cursor:crosshair;
+}
+.fa-youtube:hover{background-color:yellow;
+}
+p.add{font-size: 40px;
+    text-align:center;
+    margin-top:70px;
+    color:rgba(255, 136, 0, 0.74);
+    margin-left:45%;
+    margin-right:45%;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    }
+p.add:hover{color:#000;
+            box-shadow: inset 0 0 0 30px yellow;
+            border-style: solid;
+            border-width:thin;
+            border-color:black;}
+
+div.another{background-color:rgba(30, 4, 21, 0.5);
+            padding-top:10px;
+            padding-bottom: 30px;
+            margin-left:40%;
+            margin-right:40%;
+            transition: ease-out 0.5s;
+            box-shadow: inset 0 0 0 0 #ff00d4;
+            position:relative;
+}
+div.another:hover{box-shadow: inset 0 0 30px 0 #ff00d4;}
+
+table.Bin{color:rgb(255, 0, 191);
+         border-color:yellow;
+         margin-top: 40px;
+         margin-left: 17%;
+         position:relative;
+         }
+
+td{padding-right:50px;}
+
+
+                </style>
+        
+                </head>
+
+    <body>
+            <section class="background">
+        <nav>
+            <a href="index.html"><p class="logo">WELCOME</p></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="social_media.html">SOCIAL MEDIA</a></li>
+                    <li><a href="ContextMe.html">Registration Form</a></li>
+                    <li><a href="Education.html">EDUCATION</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p class="text">MY SOCIAL MEDIA.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/nabil.shah.9047/"><i class="fa fa-5x fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nabilshah__/"><i class="fa fa-5x fa-instagram"></i></a>
+                <a href="https://twitter.com/mhdNabilshah"><i class="fa fa-5x fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCzayyDIqjBdnMwpOFJuu_KA"><i class="fa fa-5x fa-youtube"></i></a>
+            </div>
+
+        <p class="add">ADDITION</p>
+            <div class="another">
+                <table class="Bin" border="1">
+                    <tr>
+                        <td>EMAIL : muhdnabilshah@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>NO TELEPHONE: +0196400235</td>
+                    </tr>
+                    <tr>
+                        <td>INCLUDE: WHATSAPP, TELEGRAM</td>
+                    </tr>
+                </table>
+
+            </div>
+            </section>
+        
+
+    </body>
+</html>
