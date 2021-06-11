@@ -180,7 +180,7 @@ if ( (document.form1.game[0].checked==false)
             <p class="title"> Registration Form</p>
 
             <div class="form">
-                <center><form id="f" name="form1" method="post" action=" " onSubmit=" return check()" >
+                <center><form id="f" name="form1" method="post" action=" " >
                     <p class="n" >UserName:</p><br>
                         <input type="text" name="myName"><br>
                     <p class="n" >Gender:</p><br>
@@ -210,7 +210,7 @@ if ( (document.form1.game[0].checked==false)
                    <p class="n"> Feedback For This WebSite:</p><br>
                     <textarea name="feedback" rows="5" cols="40"></textarea><br>
 
-                    <p class="button"><input type="submit" name="submit" value="Submit" >
+                    <p class="button"><input type="submit" name="submit" value="Submit" onclick="check()" >
                         <input  type="reset" name="reset" value="Reset"></p>
                 </form>
             </center>
