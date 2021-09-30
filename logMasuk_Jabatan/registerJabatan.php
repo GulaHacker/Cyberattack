@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Pendaftaran | Jabatan&Agensi</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(213, 226, 226);
+        }
+        section{
+            margin-top: 7%;
+        }
+        .row{
+            background:white;
+            border-radius:30px;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="Form ">
+        <div class="container">
+                <form class="row g-5" action="includes/registerFunct.php" action="https://formsubmit.co/muhdnabilshah@gmail.com" method="post">
+                    <h1>Pendaftaran Masuk Pegawai Jabatan & Agensi</h1>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Alamat E-mail">
+                    </div>
+                        <div class="col-md-6">
+                        <label for="inputName4" class="form-label">Nama</label>
+                        <input type="text" class="form-control" name="nama" placeholder="Nama Penuh" aria-label="First name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputIc" class="form-label">Nombor Kad Pengenalan</label>
+                        <input type="text" class="form-control" name="ic" placeholder="000000-00-0000">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputNumP" class="form-label">Nombor Telefon</label>
+                        <input type="text" class="form-control" name="numphone" placeholder="Nombor Telefon">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputCity" class="form-label">Jabatan/Jawatan</label>
+                        <input type="text" class="form-control" name="JawJab" placeholder="Jawatan/Jabatan">
+                    </div>
+                    <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="status" value="segera">
+                        <label class="form-check-label" for="gridCheck">
+                        Semak maklumat saya
+                        </label>
+                    </div>
+                    </div>
+                    <h6>Data anda akan dihantar ke Unit Operasi untuk pengesahan. Id dan Kata laluan akan di E-mail kepada anda.</h6>
+                    <div class="col-12">
+                    <button type="submit" class="btn btn-primary mb-5" name="signup-submit">Hantar</button>
+                </div>
+              </form>  
+        </div>
+    </section>
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+</html>
